@@ -1,0 +1,22 @@
+<transactions>
+  <transaction>
+    <type>purchase</type>
+    <currency>643</currency>
+    <amount>000000032100</amount>
+  </transaction>
+  <transaction>
+    <type>purchase</type>
+    <currency>643</currency>
+    <amount>000000021300</amount>
+  </transaction>
+  <transaction>
+    <type>purchase</type>
+    <currency>643</currency>
+    <amount>000000011300</amount>
+  </transaction>
+  <transaction>
+    <type>purchase</type>
+    <currency>643</currency>
+    <amount>000000010000</amount>
+  </transaction>
+</transactions>

@@ -1,8 +1,12 @@
 package model
 
+import "encoding/xml"
+
 type TransactionResponse struct {
-	Status  string `xml:"status"`
-	Receipt Receipt
+	XMLName    xml.Name   `xml:"transaction"`
+	Status     string     `xml:"status"`
+	Receipt    Receipt    `xml:"receipt"`
+	ErrorStack ErrorStack `xml:"error-stack"`
 }
 
 type Receipt struct {
@@ -12,4 +16,9 @@ type Receipt struct {
 	Tstatus  string `xml:"tstatus"`
 	Currency string `xml:"currency"`
 	RespCode string `xml:"resp-code"`
+}
+
+type ErrorStack struct {
+	XMLName xml.Name `xml:"error-stack"`
+	Error   string   `xml:"error"`
 }

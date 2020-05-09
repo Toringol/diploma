@@ -1,7 +1,10 @@
 package model
 
+import "encoding/xml"
+
 type TransactionRequest struct {
-	Type     string `xml:"type"`
-	Currency string `xml:"currency"`
-	Amount   string `xml:"amount"`
+	XMLName  xml.Name `xml:"transaction"`
+	Type     string   `xml:"type"`
+	Currency string   `xml:"currency"`
+	Amount   string   `xml:"amount"`
 }
