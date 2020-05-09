@@ -1,1 +1,4 @@
 terminalIP: 192.168.0.100
+terminalPort: :4433
+
+transactionsConfigPath: ../../config/transactions.yml
